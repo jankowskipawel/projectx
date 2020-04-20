@@ -17,8 +17,8 @@ public class EnemySpawn : MonoBehaviour
         
     }
 
-    public void SpawnEnemy()
+    public void SpawnEnemy(Vector3 position)
     {
-        Instantiate(enemyList[Random.Range(0, enemyList.Count)]);
+        Instantiate(enemyList[Random.Range(0, enemyList.Count)], position, Quaternion.identity);
     }
 }
